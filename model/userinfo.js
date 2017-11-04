@@ -7,7 +7,7 @@ module.exports =sequelize.define('userinfo', {
         primaryKey: true,
         autoIncrement: true,
       },
-    openID: {
+    openId: {
         type: Sequelize.STRING(100),
          unique: true,
       },

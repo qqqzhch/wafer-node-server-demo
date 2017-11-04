@@ -4,9 +4,9 @@ var tank= require('./model/tank');
 
 console.log('start')
 userinfo.sync({
-    // force: true
+    force: true
 })
-// tank.sync({
-//     // force: true
-// })
+tank.sync({
+    force: true
+})
 console.log('end')

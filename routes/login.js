@@ -1,7 +1,7 @@
 'use strict';
 
 const LoginService = require('qcloud-weapp-server-sdk').LoginService;
-let userinfo=require('./model/userinfo')
+let userinfo=require('../model/userinfo')
 
 module.exports = (req, res) => {
 console.log('微信用户信息 ceshi ')
