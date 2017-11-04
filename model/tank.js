@@ -12,6 +12,7 @@ module.exports =sequelize.define('tank', {
      nickName: Sequelize.STRING(100),
     gender: Sequelize.STRING(10),
     city: Sequelize.STRING(10),
+    province: Sequelize.STRING(10),
     description: Sequelize.TEXT,
     createdAt: Sequelize.DATE
     
