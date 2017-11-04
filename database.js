@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize');
-var env = process.env.NODE_ENV,
+var env = process.env.NODE_ENV||'production',
 config = require('./config')[env ];
 console.log('huanjingbianliang');
 console.log(env);
