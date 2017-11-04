@@ -10,7 +10,7 @@ module.exports =sequelize.define('userinfo', {
     openID: {
         type: Sequelize.STRING(100),
          unique: true,
-      }
+      },
     nickName: Sequelize.STRING(100),
     avatarUrl : Sequelize.STRING(200),
     gender : Sequelize.STRING(10),
