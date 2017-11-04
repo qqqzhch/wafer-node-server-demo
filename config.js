@@ -20,9 +20,9 @@ module.exports = {
         sql: {
             dbname: 'tucao',
             username: 'root',
-            password: '123456',
+            password: 'BBBBBDJMekkP1z',
             dbType: {
-                host: 'localhost',
+                host: '172.17.0.2',
                 dialect: 'mysql',
             }
         }
