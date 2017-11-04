@@ -1,5 +1,4 @@
 'use strict';
-
 const LoginService = require('qcloud-weapp-server-sdk').LoginService;
 let tank=require('../model/tank')
 module.exports = (req, res) => {
@@ -9,5 +8,5 @@ module.exports = (req, res) => {
         .then(function  (data) {
         	   res.json(data);
                 })
-        })
+     })
     
