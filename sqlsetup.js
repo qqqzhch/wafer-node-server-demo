@@ -1,7 +1,12 @@
 var Sequelize = require('sequelize');
+var userinfo= require('./model/userinfo');
+var tank= require('./model/tank');
 
 console.log('start')
-gitRepo.sync({
-    force: true
+userinfo.sync({
+    // force: true
 })
+// tank.sync({
+//     // force: true
+// })
 console.log('end')

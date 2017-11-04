@@ -1,16 +1,16 @@
 var Sequelize = require('sequelize');
 var env = process.env.NODE_ENV,
-config = require('./config');
+config = require('./config')[env ];
 console.log('huanjingbianliang');
 console.log(env);
 console.log(config );
 module.exports = new Sequelize(
-	config.postsql.dbname,
-	config.postsql.username,
-	config.postsql.password,
+	config.sql.dbname,
+	config.sql.username,
+	config.sql.password,
 	 {
-		host: config.postsql.dbType.host,
-		dialect: config.postsql.dbType.dialect,
+		host: config.sql.dbType.host,
+		dialect: config.sql.dbType.dialect,
 		logging: false,
 		pool: {
 			max: 50,

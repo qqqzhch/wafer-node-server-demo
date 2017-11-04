@@ -1,12 +1,15 @@
 var sequelize = require('../database');
-var itemsql = sequelize.define('gitRepo', {
-      "id": {
+var Sequelize = require('sequelize');
+module.exports =sequelize.define('tank', {
+      id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-      }
+      },
      nickName: Sequelize.STRING(100),
     userid:Sequelize.BIGINT,   
+    gender: Sequelize.STRING(10),
+    city: Sequelize.STRING(10),
     description: Sequelize.TEXT,
     createdAt: Sequelize.DATE
     
@@ -29,4 +32,3 @@ var itemsql = sequelize.define('gitRepo', {
     }]
 });
 
-module.exports = itemsql;
