@@ -12,7 +12,8 @@ module.exports = (req, res) => {
     loginService.check()
         .then(data => {
             // data.userInfo
-             tank.build({description: content},data.userInfo)
+
+             tank.build(Object.assign({description: content},data.userInfo))
              .save()
              .then(function  (argument) {
                  // body...
