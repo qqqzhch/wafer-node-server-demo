@@ -6,8 +6,10 @@ module.exports =sequelize.define('tank', {
         primaryKey: true,
         autoIncrement: true,
       },
+    openId: {
+        type: Sequelize.STRING(100),
+      },
      nickName: Sequelize.STRING(100),
-    userid:Sequelize.BIGINT,   
     gender: Sequelize.STRING(10),
     city: Sequelize.STRING(10),
     description: Sequelize.TEXT,
