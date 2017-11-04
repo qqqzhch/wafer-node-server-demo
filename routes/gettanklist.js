@@ -2,7 +2,6 @@
 
 const LoginService = require('qcloud-weapp-server-sdk').LoginService;
 let tank=require('../model/tank')
-
 module.exports = (req, res) => {
     LoginService.create(req, res).check().then(result => {
         tank
